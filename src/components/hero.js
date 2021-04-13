@@ -1,8 +1,5 @@
 import Wave from './wave';
 
-
-
-
 const Hero = () =>{
     return(
         <>
