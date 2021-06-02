@@ -8,27 +8,27 @@ import Footer from '../components/footer';
 
 export default function IndexPage() {
   return (
-    <main className="">
-      <body className=" mx-5 bg-purple-500">
-       
+    <>
+    <main  className="container-screen w-screen " >
+        <header>
           <Header/>
-       
-          <Hero/>
+          <Hero/>        
+        </header>
 
-        <section className="containe h-auto w-full mx-auto  " style={{ backgroundColor:'#FDFCFD'}}  >
+        <section className=" h-auto w-full mx-auto  " style={{ backgroundColor:'#FDFCFD'}}  >
           
-           <section className="text-center space-y-5 mx-auto w-4/5 ">
-             <h1 className="text-5xl"
+           <section className="text-center space-y-5 mx-auto md:w-4/5 ">
+             <h2 className="text-4xl md:text-5xl"
              >About
-             </h1>
+             </h2>
              
-            <section className=" flex  sm:flex-col  md:flex-row  justify-around mx-auto w-3/4  " >
+            <section className=" flex  flex-col  md:flex-row  justify-around mx-auto md:w-3/4   " >
                 
                <section className="flex flex-col space-y-3 mx-auto my-5 w-3/4" >
                     
-                    <h1 className="sm:text-xl lg:text-3xl">Who Am I</h1>
+                    <h3 className="text-xl lg:text-3xl">Who Am I</h3>
                     
-                    <section className="mx-12 text-xl">
+                    <section className="md:mx-12 text-xl">
                         <p className="text-justify italic ">
                         I'm a self-taught full-stack web developer, eager to learn and work. I'm a creative being, always tuned to my client's needs and demands. 
                         <br/>
@@ -62,7 +62,7 @@ export default function IndexPage() {
 
               <section id="about" className="flex flex-col space-y-2 h-full my-5 sm:w-2/3">
 
-                    <h2 className="sm:text-xl lg:text-2xl  ">My Abilities</h2>
+                    <h3 className="text-xl lg:text-2xl  ">My Abilities</h3>
                     
 
                     <section className="flex mx-auto">
@@ -128,17 +128,17 @@ export default function IndexPage() {
 
       
         <section className=" pt-32 pb-24 h-auto mx-auto bg-white" style={{ backgroundColor:'#FDFCFD'}} >
-          <h1 className="text-center text-5xl" >My Projects</h1>
-          <section id="projects" className="flex justify-evenly flex-wrap h-auto mx-32 mt-5 w-3/4 mx-auto"
+          <h2 className="text-center  text-4xl md:text-5xl" >My Projects</h2>
+          <section id="projects" className="flex justify-evenly flex-wrap h-auto mx-32 mt-5 md:w-3/4 mx-auto"
           >
             <Card />
           </section>
         </section>
 
+      </main>
         <Footer />
-
-      </body>
-    </main>
+    </>
+     
   )
 }
 

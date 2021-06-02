@@ -22,14 +22,14 @@ const Header = () =>{
        <>
        <section className="w-full">
 
-        <header className={`flex h-20 transition-transitionBackground transition-all duration-500    ${  scrollPosition === 0 ? ' absolute h-36  ' :  scrollPosition !==0 && 'shadow-xl bg-background fixed z-50' }`} style={{
-                    width: '95.5%'
+        <div className={`flex h-20 transition-transitionBackground transition-all duration-500  ${scrollPosition === 0 ? ' absolute h-36  ' : scrollPosition !== 0 && 'shadow-xl bg-background fixed  z-50 ' }`} style={{
+                    width: '100%'
         }} >
 
 
             <nav className={`flex justify-center mx-auto md:w-11/12  transition-all duration-500 ${scrollPosition===0 ?'py-2 relative ' : 'py-2 ' }`} >
 
-                <ul className="grid grid-cols-4 sm:grid-cols-5   mx-auto  justify-items-center   items-center   text-white text-sm md:text-2xl font-bold  sm:space-x-20">
+                        <ul className="grid grid-cols-5 mx-auto  justify-items-center  items-center  text-white text-sm md:text-2xl font-bold  md:space-x-20">
                    
                         <li className="justify-self-end">
                             <a href="">
@@ -58,7 +58,7 @@ const Header = () =>{
 
 
 
-        </header>
+        </div>
        </section>
 
        </>
